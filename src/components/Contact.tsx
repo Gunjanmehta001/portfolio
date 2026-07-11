@@ -29,9 +29,14 @@ export function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      // TODO: Integrate with email service (SendGrid, Resend, etc.)
-      // TODO: Add form validation + reCAPTCHA
-      console.log('Form submitted:', formData);
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) throw new Error('Failed to send message');
+
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
       setTimeout(() => setSubmitStatus('idle'), 3000);

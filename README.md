@@ -1,142 +1,101 @@
-# 👨‍💼 Gunjan Mehta — Product Engineer
+# Gunjan Mehta
 
-> Building AI-native products from 0→1 with deep product thinking and rapid execution.
+> Product Engineer building AI-native products from 0 to 1 with deep product thinking and rapid execution.
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-gunjanmehta.vercel.app-3b82f6?style=for-the-badge&logo=vercel)](https://gunjanmehta.vercel.app)
-[![Email](https://img.shields.io/badge/Email-gunjanmehta.contact%40gmail.com-d14836?style=for-the-badge&logo=gmail)](mailto:gunjanmehta.contact@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Gunjan%20Mehta-0077b5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/gunjan-mehta-0b466026a/)
+<div align="center">
 
----
+[![Portfolio](https://img.shields.io/badge/-Portfolio-3b82f6?style=flat-square&logo=vercel&logoColor=white)](https://gunjanmehta.vercel.app)
+[![Email](https://img.shields.io/badge/-Email-d14836?style=flat-square&logo=gmail&logoColor=white)](mailto:gunjanmehta.contact@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077b5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gunjan-mehta-0b466026a/)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Gunjanmehta001)
 
-## 🎮 Interactive Portfolio
-
-A **Minecraft-inspired portfolio** with a custom pixel cursor explorer, hotbar navigation, and day/night cycle. Built with Next.js, TypeScript, and Framer Motion.
-
-### ✨ Features
-
-- 🌍 **Spawn Area** — Hero section with dynamic sky, clouds, and terrain
-- 🏠 **The Cabin** — About section with stats and background
-- 🏰 **The Castle** — Experience & work history
-- 🏘️ **The Village** — Featured projects showcase
-- ⛏️ **The Mine** — Skills organized by expertise level
-- 🌀 **The Portal** — Contact form and social links
-- 🔥 **Campfire** — Footer with navigation
-
-### 🎮 Interactive Elements
-
-| Control | Action |
-|---------|--------|
-| **1-6** | Fast travel between sections |
-| **7** | Toggle day/night mode |
-| 🖱️ **Shake mouse** | Cursor grows (macOS-style) |
-| 🖱️ **Click** | Sword swings / Torch flickers |
+</div>
 
 ---
 
-## 👨‍💻 About Me
+## Experience
 
-**Product Engineer** with 5+ years building AI-native products from concept to production.
+### Product Engineer (AI Systems)
+**Hapticware Intelligence** | Apr 2026 - Present | Pune, India
 
-### 🎯 Core Expertise
+- Owned end-to-end execution of ExoQ (AI Agent OS), delivering 30+ features from ideation to production
+- Authored 25+ PRDs and FRDs for AI agents, enterprise workflows, pricing, and compliance initiatives
+- Defined product scope, feature prioritization, and workflows for 59 AI sub-agents
+- Led sprint planning, roadmap execution, and 9 production releases in 3 weeks
+- Led QA, UAT, and enterprise compliance across GDPR, HIPAA, ISO 27001, SOC 2, and DPDP
 
-- **Product**: PRDs/FRDs, roadmap execution, cross-functional leadership
-- **AI**: LLMs, agentic systems, multi-agent orchestration, RAG
-- **Data**: SQL, Python, product metrics, KPI analysis
-- **Enterprise**: GDPR, HIPAA, ISO 27001, SOC 2, compliance
-- **Tech Stack**: React, Next.js, TypeScript, Node.js, PostgreSQL, GCP
+### Product Engineer
+**DDN Storage (DataDirect Networks)** | Apr 2025 - Mar 2026 | Pune, India
 
----
-
-## 💼 Experience
-
-### **Product Engineer (AI Systems)** — Hapticware Intelligence
-*Apr 2026 – Present | Pune, India*
-
-- Owned end-to-end execution of **ExoQ** (AI Agent OS), delivering 30+ features
-- Authored **25+ PRDs/FRDs** for AI agents, enterprise workflows, and compliance
-- Defined product scope & workflows for **59 AI sub-agents** across 9 production releases in 3 weeks
-- Led QA, UAT, and compliance across GDPR, HIPAA, ISO 27001, SOC 2, DPDP
-
-### **Product Engineer** — DDN Storage (DataDirect Networks)
-*Apr 2025 – Mar 2026 | Pune, India*
-
-- Partnered with enterprise customers to drive issue resolution and product improvements
-- Performed **RCA on 20+ incidents**, reducing repeat escalations by **15%**
-- Automated log analysis using **Python**, improving debugging efficiency by **40%**
-- Created SOPs and technical documentation for enterprise workflows
+- Partnered with enterprise customers, support, and engineering teams to drive issue resolution and product improvements
+- Performed RCA on 20+ enterprise incidents, reducing repeat escalations by 15%
+- Automated log analysis using Python, improving debugging efficiency by 40%
+- Created SOPs and technical documentation to streamline onboarding and operational workflows
 
 ---
 
-## 🚀 Projects
+## Projects
 
-### **ExoQ.ai** — AI Agent OS
+### ExoQ.ai
 Enterprise AI platform with LLMs, RAG, and multi-agent orchestration for workflow automation.
 
-**Tech**: LLM Applications · RAG · Multi-Agent Systems · Prompt Engineering
+**Tech:** LLM Applications | RAG | Multi-Agent Systems | Prompt Engineering
 
-### **Healthcare CRM** — HV Desai
+### Healthcare CRM (HV Desai)
 CRM platform delivering workflow automation by translating business requirements into user-centric features.
 
-**Tech**: Requirement Gathering · Stakeholder Management · Product Design
+**Tech:** Requirement Gathering | Stakeholder Management | Product Design
 
 ---
 
-## 🛠️ Tech Stack
+## Skills
 
-```
-Frontend:    React, Next.js, TypeScript, Tailwind CSS, Framer Motion
-Backend:     Node.js, Express, REST APIs
-Database:    PostgreSQL, MongoDB, Firebase
-Tools:       Git, GitHub, GCP, Jira, Notion, Figma, Confluence
-AI/ML:       Claude, LLMs, Agentic AI, RAG, Prompt Engineering
-```
+**Product:** Product Ownership | PRDs/FRDs | Product Strategy | Roadmapping | Sprint Planning | Backlog Prioritization | Requirement Gathering | Stakeholder Management | UAT
 
----
+**AI:** LLM Applications | Agentic AI | Multi-Agent Systems | RAG | AI Workflow Design | Prompt Engineering
 
-## 📊 Stats
+**Data & Analytics:** SQL | Python (Pandas) | MS Excel | Product Metrics | KPIs
 
-| Metric | Value |
-|--------|-------|
-| Years in Product | 5+ |
-| Features Shipped | 30+ |
-| PRDs/FRDs Written | 25+ |
-| AI Sub-Agents Scoped | 59 |
-| Production Releases | 9 (in 3 weeks) |
-| Enterprise Incidents Analyzed | 20+ |
+**Enterprise:** Cross-functional Leadership | Customer Feedback Analysis | GDPR | HIPAA | ISO 27001 | SOC 2 | DPDP | Agile Scrum
+
+**Technical & Tools:** REST APIs | MERN Stack | Git | GitHub | GCP | Jira | Notion | Figma | Confluence | Claude | Cursor | Lovable
 
 ---
 
-## 🎨 Built With
+## Built With
 
-- **Framework**: Next.js 15 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
-- **Fonts**: Press Start 2P (pixel), Inter (body)
-- **Hosting**: Vercel (auto-deploy on push)
-- **Performance**: ~150KB first load, static prerender, 95+ Lighthouse
+- **Framework:** Next.js 15 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Hosting:** Vercel (auto-deploy on push)
+- **Performance:** ~150KB first load, static prerender, 95+ Lighthouse score
 
 ---
 
-## 🚀 Quick Start
+## Interactive Features
+
+| Key | Action |
+|-----|--------|
+| **1-6** | Fast travel between sections |
+| **7** | Toggle day/night mode |
+| **Shake mouse** | Cursor grows (macOS-style) |
+| **Click** | Sword swings / Torch flickers |
+
+---
+
+## Quick Start
 
 ### Local Development
 
 ```bash
-# Clone and install
 git clone https://github.com/Gunjanmehta001/portfolio.git
 cd portfolio
 npm install
-
-# Start dev server
 npm run dev
-
-# Build for production
-npm run build
-npm start
 ```
 
-Visit `http://localhost:3000` and press `7` to toggle day/night!
+Visit `http://localhost:3000`
 
 ### Deploy to Vercel
 
@@ -149,40 +108,32 @@ Every git push auto-deploys to production.
 
 ---
 
-## 📝 Customization
+## Customize
 
-### Update Resume Content
-
-- **About**: `src/components/About.tsx`
-- **Experience**: `src/components/Experience.tsx`
-- **Projects**: `src/components/Projects.tsx`
-- **Skills**: `src/components/Skills.tsx`
-
-### Modify Theme
-
-- **Colors**: `src/app/globals.css` (CSS variables)
-- **Fonts**: `src/app/layout.tsx` (Google Fonts)
-- **Animations**: `src/lib/motion.ts` (motion tokens)
+- **About:** `src/components/About.tsx`
+- **Experience:** `src/components/Experience.tsx`
+- **Projects:** `src/components/Projects.tsx`
+- **Skills:** `src/components/Skills.tsx`
+- **Colors:** `src/app/globals.css`
+- **Animations:** `src/lib/motion.ts`
 
 ---
 
-## 📞 Connect
+## Stats
 
-- 🌐 **Portfolio**: [gunjanmehta.vercel.app](https://gunjanmehta.vercel.app)
-- 📧 **Email**: [gunjanmehta.contact@gmail.com](mailto:gunjanmehta.contact@gmail.com)
-- 💼 **LinkedIn**: [Gunjan Mehta](https://www.linkedin.com/in/gunjan-mehta-0b466026a/)
-- 💻 **GitHub**: [Gunjanmehta001](https://github.com/Gunjanmehta001)
-
----
-
-## 📄 License
-
-MIT © 2026 Gunjan Mehta
+| Metric | Value |
+|--------|-------|
+| Years in Product | 5+ |
+| Features Shipped | 30+ |
+| PRDs/FRDs Written | 25+ |
+| AI Sub-Agents Scoped | 59 |
+| Production Releases | 9 (in 3 weeks) |
+| Enterprise Incidents Analyzed | 20+ |
 
 ---
 
-## 🎮 Have fun exploring the world! 🌍
+<div align="center">
 
-Press `1-6` to navigate, `7` for night mode, shake your mouse to grow the explorer.
+Made with <span style="color: #ff006e;">❤</span> and pixels
 
-**Made with ❤️ and pixels**
+</div>

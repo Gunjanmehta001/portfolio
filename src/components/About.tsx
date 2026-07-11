@@ -43,7 +43,7 @@ export function About() {
                 I&apos;m a Product Engineer building AI-native products from 0&rarr;1, with hands-on
                 experience across product ownership, PRDs/FRDs, AI agent systems, and roadmap
                 execution. At Hapticware Intelligence, I own the end-to-end execution of ExoQ
-                &mdash; an AI Agent OS &mdash; alongside our CRM and Admin Portal, working directly
+                - an AI Agent OS - alongside our CRM and Admin Portal, working directly
                 with founders, engineering, and customers.
               </p>
               <p className="text-lg leading-relaxed">

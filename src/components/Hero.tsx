@@ -123,7 +123,7 @@ export function Hero() {
           variants={fadeUp}
           className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/95 [text-shadow:1px_1px_0_rgba(0,0,0,0.3)] md:text-xl"
         >
-          I build AI-native products from 0&rarr;1 &mdash; owning PRDs, agent systems, and roadmap
+          I build AI-native products from 0&rarr;1 - owning PRDs, agent systems, and roadmap
           execution end to end, from ideation to production.
         </motion.p>
 

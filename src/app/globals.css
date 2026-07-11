@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #dff0fa;
+  --color-foreground: #20262e;
+  --color-accent: #3f8f3f;
+  --color-accent-light: #d9f0d0;
+  --color-accent-dark: #2f6b2f;
+  --color-border: #c3d3dc;
+  --color-muted-bg: #f2f7fa;
+
+  --panel: #fbf6ea;
+  --panel-border: #20262e;
+
+  --bg-plains: #e4f2df;
+  --bg-stone: #e9ebec;
+  --bg-mine: #23262d;
+  --bg-village: #eaf3f7;
+  --bg-dusk: #ece2f6;
+  --bg-ground: #181109;
+
+  --sky-top: #68b7e8;
+  --sky-bottom: #c8e8f7;
+  --grass: #6cbb45;
+  --grass-dark: #549934;
+  --dirt: #8a5a33;
+  --dirt-dark: #6e4726;
+  --stone: #969a9d;
+  --stone-dark: #7b7f83;
+  --plank: #c99b5f;
+  --plank-dark: #a87e49;
+  --deepslate: #2b2e35;
+  --portal: #9d4edd;
+  --portal-2: #c77dff;
+  --gold: #f2b93c;
+  --diamond: #45dcc8;
+  --redstone: #ef5350;
+  --emerald: #31c273;
+  --lapis: #5b8bdf;
+  --tooltip-bg: #160a1e;
+  --tooltip-border: #5a2b8c;
+}
+
+html.dark {
+  color-scheme: dark;
+  --color-background: #0b101f;
+  --color-foreground: #e9edf5;
+  --color-accent: #4da03f;
+  --color-accent-light: #173420;
+  --color-accent-dark: #7ed072;
+  --color-border: #242c40;
+  --color-muted-bg: #131a2b;
+
+  --panel: #141a29;
+  --panel-border: #05070d;
+
+  --bg-plains: #0e1526;
+  --bg-stone: #12161f;
+  --bg-mine: #191c22;
+  --bg-village: #0d1424;
+  --bg-dusk: #150f26;
+  --bg-ground: #0d0906;
+
+  --sky-top: #070b1c;
+  --sky-bottom: #131c34;
+  --grass: #4f8f37;
+  --grass-dark: #3d7229;
+  --dirt: #6e4a2b;
+  --dirt-dark: #573a21;
+  --stone: #585c62;
+  --stone-dark: #43474d;
+  --plank: #8f6b40;
+  --plank-dark: #745430;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.font-pixel {
+  font-family: var(--font-pixel), 'Courier New', monospace;
+}
+
+/* Minecraft-style bevel: light top-left, dark bottom-right */
+.px-bevel {
+  box-shadow: inset -3px -3px 0 rgba(0, 0, 0, 0.28), inset 3px 3px 0 rgba(255, 255, 255, 0.3);
+}
+.px-bevel-inset {
+  box-shadow: inset 3px 3px 0 rgba(0, 0, 0, 0.28), inset -3px -3px 0 rgba(255, 255, 255, 0.18);
+}
+.px-frame {
+  border: 3px solid var(--panel-border);
+}
+.panel {
+  background: var(--panel);
+}
+.planks {
+  background:
+    repeating-linear-gradient(0deg, transparent 0 22px, rgba(0, 0, 0, 0.14) 22px 24px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 90px, rgba(0, 0, 0, 0.06) 90px 180px),
+    var(--plank);
+}
+.bricks {
+  background:
+    repeating-linear-gradient(0deg, transparent 0 20px, rgba(0, 0, 0, 0.16) 20px 22px),
+    repeating-linear-gradient(90deg, transparent 0 42px, rgba(0, 0, 0, 0.1) 42px 44px),
+    var(--stone);
+}
+.mc-tooltip {
+  background: var(--tooltip-bg);
+  border: 2px solid var(--tooltip-border);
+  color: #fff;
+}
+
+/* Custom pixel cursor */
+html.pixel-cursor,
+html.pixel-cursor * {
+  cursor: none !important;
+}
+html.pixel-cursor input,
+html.pixel-cursor textarea {
+  cursor: text !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-accent-dark);
+  outline-offset: 2px;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-muted-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--dirt);
+  border: 2px solid var(--color-muted-bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--grass-dark);
+}

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Press_Start_2P, Inter } from 'next/font/google';
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/next';
 import { AppShell } from '../components/AppShell';
 import './globals.css';
 

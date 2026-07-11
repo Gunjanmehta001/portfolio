@@ -6,6 +6,7 @@ import { Navbar } from './Navbar';
 import { Footer } from './Footer';
 import { PixelCursor } from './PixelCursor';
 import { AmbientParticles } from './AmbientParticles';
+import { ChatBot } from './ChatBot';
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   return (
@@ -22,6 +23,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       <main id="main" className="w-full">
         {children}
       </main>
+      <ChatBot />
       <Footer />
     </ThemeProvider>
   );

@@ -1,9 +1,10 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Section } from './Section';
 import { Button } from './Button';
+import { ResumeModal } from './ResumeModal';
 import { TerrainDivider } from './TerrainDivider';
 import { staggerContainer, fadeUp } from '../lib/motion';
 
@@ -41,6 +42,8 @@ function Tree({ className = '' }: { className?: string }) {
 }
 
 export function Hero() {
+  const [resumeOpen, setResumeOpen] = useState(false);
+
   return (
     <Section
       id="spawn"
@@ -142,7 +145,12 @@ export function Hero() {
           >
             Get in Touch
           </Button>
+          <Button variant="secondary" size="lg" onClick={() => setResumeOpen(true)}>
+            📜 Resume
+          </Button>
         </motion.div>
+
+        <ResumeModal open={resumeOpen} onClose={() => setResumeOpen(false)} />
 
         <motion.p
           variants={fadeUp}

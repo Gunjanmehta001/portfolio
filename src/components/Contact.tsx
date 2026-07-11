@@ -167,7 +167,7 @@ export function Contact() {
           <div className="text-center">
             <p className="mb-1 font-pixel text-[9px] opacity-70">LINKEDIN</p>
             <a
-              href="https://linkedin.com/in/gunjan-mehta"
+              href="https://www.linkedin.com/in/gunjan-mehta-0b466026a/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-portal transition-colors hover:text-portal-2"

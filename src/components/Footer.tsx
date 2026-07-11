@@ -61,7 +61,7 @@ export function Footer() {
             </Link>
           ))}
           <a
-            href="https://linkedin.com/in/gunjan-mehta"
+            href="https://www.linkedin.com/in/gunjan-mehta-0b466026a/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-slate-300 transition-colors hover:text-amber-200"

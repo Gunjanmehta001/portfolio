@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { Resend } from 'resend';
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const TO_EMAIL = 'gunjanmehta.contact@gmail.com';
@@ -13,31 +14,28 @@ export async function POST(request: NextRequest) {
 
     // If Resend API key is available, use it
     if (RESEND_API_KEY) {
-      const response = await fetch('https://api.resend.com/emails', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${RESEND_API_KEY}`,
-        },
-        body: JSON.stringify({
-          from: 'portfolio@resend.dev',
-          to: TO_EMAIL,
-          replyTo: email,
-          subject: `Portfolio Contact: ${name}`,
-          html: `
-            <h2>New Message from Portfolio</h2>
-            <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Message:</strong></p>
-            <p>${message.replace(/\n/g, '<br>')}</p>
-          `,
-        }),
+      const resend = new Resend(RESEND_API_KEY);
+
+      const result = await resend.emails.send({
+        from: 'onboarding@resend.dev',
+        to: TO_EMAIL,
+        replyTo: email,
+        subject: `Portfolio Contact: ${name}`,
+        html: `
+          <h2>New Message from Portfolio</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Message:</strong></p>
+          <p>${message.replace(/\n/g, '<br>')}</p>
+        `,
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to send email via Resend');
+      if (result.error) {
+        console.error('Resend API error:', result.error);
+        throw new Error(`Resend failed: ${JSON.stringify(result.error)}`);
       }
 
+      console.log('Email sent successfully via Resend:', result.data?.id);
       return NextResponse.json({ success: true, message: 'Email sent successfully' });
     }
 
@@ -50,7 +48,8 @@ export async function POST(request: NextRequest) {
       message: 'Message received. Email service not configured yet.'
     });
   } catch (error) {
-    console.error('Contact API error:', error);
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    console.error('Contact API error:', errorMessage);
     return NextResponse.json({ error: 'Failed to process request' }, { status: 500 });
   }
 }

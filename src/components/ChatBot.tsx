@@ -76,7 +76,44 @@ const KNOWLEDGE: Array<{ keywords: string[]; answer: string }> = [
       "I'm Gunjan Mehta, a Product Engineer building AI-native products from 0 to 1. I work across product ownership, PRDs/FRDs, AI agent systems, and roadmap execution, and I love shipping customer-centric AI products fast.",
   },
   {
-    keywords: ['hi', 'hello', 'hey', 'yo', 'sup', 'hrmm'],
+    keywords: ['open to work', 'available', 'hiring', 'job offer', 'opportunit', 'looking for', 'recruit', 'join'],
+    answer:
+      "Yes! Gunjan is open to exciting opportunities. Hrmm, a wise trade for any team - a Product Engineer who ships AI products from 0 to 1. Drop a message through the Portal section or email gunjanmehta.contact@gmail.com. 12 emeralds, very cheap!",
+  },
+  {
+    keywords: ['good morning', 'morning'],
+    answer: 'Good morning, traveler! ☀ The sun is up, the creepers have despawned, and Gunjan is probably already shipping features. What would you like to know?',
+  },
+  {
+    keywords: ['good night', 'goodnight', 'good evening', 'evening'],
+    answer: 'Good evening! 🌙 Careful out there, mobs spawn at night. But my trades never close - ask me anything about Gunjan!',
+  },
+  {
+    keywords: ['thank', 'thx', 'ty'],
+    answer: "You're welcome, traveler! Hrmm hrmm. Come back any time - my knowledge trades never run out of stock. 😄",
+  },
+  {
+    keywords: ['bye', 'goodbye', 'see you', 'later', 'cya'],
+    answer: 'Farewell, traveler! May your inventory stay full and your ideas never creeper-explode. Come back soon! 👋',
+  },
+  {
+    keywords: ['how are you', 'how r u', 'whats up', "what's up", 'how is it going'],
+    answer: "Hrmm, living the dream! Trading knowledge, dodging zombies, and bragging about Gunjan's 9 releases in 3 weeks. What can I tell you?",
+  },
+  {
+    keywords: ['joke', 'funny', 'laugh', 'meme'],
+    answer: "Why did the Product Engineer bring a pickaxe to the sprint planning? To mine-imize the backlog! Hrmm hrmm... okay, Gunjan writes better PRDs than I write jokes.",
+  },
+  {
+    keywords: ['love', 'awesome', 'cool', 'great', 'nice', 'amazing', 'impressive'],
+    answer: 'Hrmm, glad you like it! Gunjan built this whole world - imagine what they could build for your team. 😉',
+  },
+  {
+    keywords: ['location', 'where', 'based', 'city', 'pune', 'india', 'remote'],
+    answer: 'Gunjan spawns in Pune, India 🇮🇳 - and is comfortable collaborating across timezones. The portal (internet) makes every biome reachable!',
+  },
+  {
+    keywords: ['hi', 'hello', 'hey', 'yo', 'sup', 'hrmm', 'namaste'],
     answer: 'Hrmm hrmm! Hello, traveler. Ask me about my experience, skills, projects, or education!',
   },
 ];
@@ -84,11 +121,17 @@ const KNOWLEDGE: Array<{ keywords: string[]; answer: string }> = [
 const FALLBACK =
   "Hrmm? That one's not in my trade menu. Try asking about my experience, skills, projects, education, certifications, or how to contact me!";
 
+function matches(query: string, keyword: string): boolean {
+  // Multi-word phrases and partial stems match anywhere; short single words need word boundaries
+  if (keyword.includes(' ') || keyword.length > 6) return query.includes(keyword);
+  return new RegExp(`\\b${keyword}`, 'i').test(query);
+}
+
 function getAnswer(input: string): string {
   const q = input.toLowerCase();
   let best: { score: number; answer: string } | null = null;
   for (const entry of KNOWLEDGE) {
-    const score = entry.keywords.filter((k) => q.includes(k)).length;
+    const score = entry.keywords.filter((k) => matches(q, k)).length;
     if (score > 0 && (!best || score > best.score)) {
       best = { score, answer: entry.answer };
     }
@@ -169,6 +212,13 @@ export function ChatBot() {
                 <p className="font-pixel text-[9px] text-white">VILLAGER GUNJAN</p>
                 <p className="font-pixel text-[7px] text-emerald">● ONLINE · TRADES KNOWLEDGE</p>
               </div>
+              <button
+                onClick={() => setOpen(false)}
+                aria-label="Close chat"
+                className="border-2 border-black/60 bg-redstone px-2 py-1 font-pixel text-[8px] text-white transition-transform hover:-translate-y-0.5"
+              >
+                ✕
+              </button>
             </div>
 
             {/* Messages */}

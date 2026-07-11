@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const RESUME_PATH = '/GunjanMehta_Resume.pdf';
@@ -12,6 +13,10 @@ interface ResumeModalProps {
 
 /** Book-and-quill style modal that previews the resume PDF with a download option. */
 export function ResumeModal({ open, onClose }: ResumeModalProps) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose();
@@ -23,7 +28,10 @@ export function ResumeModal({ open, onClose }: ResumeModalProps) {
     };
   }, [open, onClose]);
 
-  return (
+  if (!mounted) return null;
+
+  // Portal to body so ancestor transforms/stacking contexts can't break the fixed overlay
+  return createPortal(
     <AnimatePresence>
       {open && (
         <motion.div
@@ -84,6 +92,7 @@ export function ResumeModal({ open, onClose }: ResumeModalProps) {
           </motion.div>
         </motion.div>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 }

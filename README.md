@@ -129,11 +129,3 @@ Every git push auto-deploys to production.
 | AI Sub-Agents Scoped | 59 |
 | Production Releases | 9 (in 3 weeks) |
 | Enterprise Incidents Analyzed | 20+ |
-
----
-
-<div align="center">
-
-Made with <span style="color: #ff006e;">❤</span> and pixels
-
-</div>

@@ -197,7 +197,7 @@ export function PixelCursor() {
 }
 
 /**
- * Original voxel explorer — brown hair, blue shirt, dark brown pants, brown
+ * Original voxel explorer - brown hair, blue shirt, dark brown pants, brown
  * boots, friendly smile. Sword by day, burning torch by night.
  * Arms pivot at the SHOULDER (view-box origins) so nothing dislocates.
  *
@@ -312,7 +312,7 @@ function Explorer({ swinging, hovering, torch }: { swinging: boolean; hovering: 
       {/* eyes */}
       <rect x="10" y="4" width="1" height="1" fill="#26221f" />
       <rect x="13" y="4" width="1" height="1" fill="#26221f" />
-      {/* friendly smile — widens a touch on hover */}
+      {/* friendly smile - widens a touch on hover */}
       <rect x={hovering ? 10 : 11} y="6" width={hovering ? 4 : 2} height="1" fill="#c98a5e" />
     </svg>
   );

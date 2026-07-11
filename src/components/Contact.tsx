@@ -63,7 +63,7 @@ export function Contact() {
           className="mb-4 flex items-center justify-center gap-3 text-center font-pixel text-xl md:text-2xl"
         >
           <span className="inline-block h-4 w-4 bg-portal px-bevel" aria-hidden />
-          THE PORTAL — CONTACT
+          THE PORTAL - CONTACT
         </motion.h2>
 
         <motion.p variants={fadeUp} className="mb-12 text-center text-lg opacity-90">

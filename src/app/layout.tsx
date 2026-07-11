@@ -19,7 +19,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Gunjan Mehta - Product Engineer',
   description:
-    'Product Engineer building AI-native products from 0→1 — PRDs/FRDs, AI agent systems, and roadmap execution.',
+    'Product Engineer building AI-native products from 0→1 - PRDs/FRDs, AI agent systems, and roadmap execution.',
   keywords: ['product engineer', 'AI agents', 'PRD', 'FRD', 'product management', 'portfolio'],
   authors: [{ name: 'Gunjan Mehta' }],
   openGraph: {

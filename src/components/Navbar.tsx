@@ -78,11 +78,11 @@ const icons: Record<string, React.ReactNode> = {
 
 const slots = [
   { id: 'spawn', label: 'Spawn' },
-  { id: 'about', label: 'The Cabin — About' },
-  { id: 'experience', label: 'The Castle — Experience' },
-  { id: 'projects', label: 'The Village — Projects' },
-  { id: 'skills', label: 'The Mine — Skills' },
-  { id: 'contact', label: 'The Portal — Contact' },
+  { id: 'about', label: 'The Cabin - About' },
+  { id: 'experience', label: 'The Castle - Experience' },
+  { id: 'projects', label: 'The Village - Projects' },
+  { id: 'skills', label: 'The Mine - Skills' },
+  { id: 'contact', label: 'The Portal - Contact' },
 ];
 
 /** Player nametag (top-left) + Minecraft-style hotbar navigation (bottom). Keys 1–7 work too. */

@@ -75,7 +75,7 @@ export function Skills() {
         </motion.p>
         <motion.h2 variants={fadeUp} className="mb-10 flex items-center gap-3 font-pixel text-xl text-white md:text-2xl">
           <span className="inline-block h-4 w-4 bg-diamond px-bevel" aria-hidden />
-          THE MINE — SKILLS
+          THE MINE - SKILLS
         </motion.h2>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">

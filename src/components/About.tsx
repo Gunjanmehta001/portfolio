@@ -24,7 +24,7 @@ export function About() {
       >
         <motion.h2 variants={fadeUp} className="mb-10 flex items-center gap-3 font-pixel text-xl md:text-2xl">
           <span className="inline-block h-4 w-4 bg-plank px-bevel" aria-hidden />
-          THE CABIN — ABOUT ME
+          THE CABIN - ABOUT ME
         </motion.h2>
 
         <motion.div variants={fadeUp}>

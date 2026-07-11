@@ -40,7 +40,7 @@ export function Projects() {
       >
         <motion.h2 variants={fadeUp} className="mb-10 flex items-center gap-3 font-pixel text-xl md:text-2xl">
           <span className="inline-block h-4 w-4 bg-gold px-bevel" aria-hidden />
-          THE VILLAGE — PROJECTS
+          THE VILLAGE - PROJECTS
         </motion.h2>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">

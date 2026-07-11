@@ -63,7 +63,7 @@ export function Experience() {
       >
         <motion.h2 variants={slideIn} className="mb-10 flex items-center gap-3 font-pixel text-xl md:text-2xl">
           <span className="inline-block h-4 w-4 bg-stone px-bevel" aria-hidden />
-          THE CASTLE — EXPERIENCE
+          THE CASTLE - EXPERIENCE
         </motion.h2>
 
         <div className="space-y-8">

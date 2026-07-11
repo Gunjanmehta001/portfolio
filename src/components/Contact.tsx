@@ -67,7 +67,7 @@ export function Contact() {
         </motion.h2>
 
         <motion.p variants={fadeUp} className="mb-12 text-center text-lg opacity-90">
-          Have a product problem worth solving? Step through - I'd love to hear about it.
+          Have a product problem worth solving? Step through - I&apos;d love to hear about it.
         </motion.p>
 
         {/* Obsidian portal frame with purple glow */}

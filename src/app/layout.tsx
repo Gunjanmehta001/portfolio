@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Press_Start_2P, Inter } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 import { AppShell } from '../components/AppShell';
 import './globals.css';
 
@@ -43,6 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-background text-foreground font-sans">
         <AppShell>{children}</AppShell>
+        <Analytics />
       </body>
     </html>
   );

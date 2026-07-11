@@ -4,7 +4,7 @@
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-gunjanmehta.vercel.app-3b82f6?style=for-the-badge&logo=vercel)](https://gunjanmehta.vercel.app)
 [![Email](https://img.shields.io/badge/Email-gunjanmehta.contact%40gmail.com-d14836?style=for-the-badge&logo=gmail)](mailto:gunjanmehta.contact@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Gunjan%20Mehta-0077b5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/gunjan-mehta)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Gunjan%20Mehta-0077b5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/gunjan-mehta-0b466026a/)
 
 ---
 
@@ -170,7 +170,7 @@ Every git push auto-deploys to production.
 
 - 🌐 **Portfolio**: [gunjanmehta.vercel.app](https://gunjanmehta.vercel.app)
 - 📧 **Email**: [gunjanmehta.contact@gmail.com](mailto:gunjanmehta.contact@gmail.com)
-- 💼 **LinkedIn**: [Gunjan Mehta](https://linkedin.com/in/gunjan-mehta)
+- 💼 **LinkedIn**: [Gunjan Mehta](https://www.linkedin.com/in/gunjan-mehta-0b466026a/)
 - 💻 **GitHub**: [Gunjanmehta001](https://github.com/Gunjanmehta001)
 
 ---

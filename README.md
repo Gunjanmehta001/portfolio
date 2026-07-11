@@ -1,206 +1,188 @@
-# Product Engineer Portfolio
+# 👨‍💼 Gunjan Mehta — Product Engineer
 
-A modern, production-ready portfolio website built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion. This template showcases a product engineer&apos;s work and expertise.
+> Building AI-native products from 0→1 with deep product thinking and rapid execution.
 
-## Features
+[![Portfolio](https://img.shields.io/badge/Portfolio-gunjanmehta.vercel.app-3b82f6?style=for-the-badge&logo=vercel)](https://gunjanmehta.vercel.app)
+[![Email](https://img.shields.io/badge/Email-gunjanmehta.contact%40gmail.com-d14836?style=for-the-badge&logo=gmail)](mailto:gunjanmehta.contact@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Gunjan%20Mehta-0077b5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/gunjan-mehta)
 
-- ✅ **App Router**: Next.js 15 App Router for optimal performance
-- ✅ **TypeScript**: Full type safety across the application
-- ✅ **Dark Mode**: Theme system with light/dark mode support
-- ✅ **Responsive Design**: Mobile-first, fully responsive layout
-- ✅ **Animations**: Framer Motion for smooth, performant animations
-- ✅ **SEO Optimized**: Meta tags, Open Graph, structured data
-- ✅ **Accessibility**: WCAG compliant components
-- ✅ **Clean Architecture**: Reusable components and utilities
+---
 
-## Project Structure
+## 🎮 Interactive Portfolio
+
+A **Minecraft-inspired portfolio** with a custom pixel cursor explorer, hotbar navigation, and day/night cycle. Built with Next.js, TypeScript, and Framer Motion.
+
+### ✨ Features
+
+- 🌍 **Spawn Area** — Hero section with dynamic sky, clouds, and terrain
+- 🏠 **The Cabin** — About section with stats and background
+- 🏰 **The Castle** — Experience & work history
+- 🏘️ **The Village** — Featured projects showcase
+- ⛏️ **The Mine** — Skills organized by expertise level
+- 🌀 **The Portal** — Contact form and social links
+- 🔥 **Campfire** — Footer with navigation
+
+### 🎮 Interactive Elements
+
+| Control | Action |
+|---------|--------|
+| **1-6** | Fast travel between sections |
+| **7** | Toggle day/night mode |
+| 🖱️ **Shake mouse** | Cursor grows (macOS-style) |
+| 🖱️ **Click** | Sword swings / Torch flickers |
+
+---
+
+## 👨‍💻 About Me
+
+**Product Engineer** with 5+ years building AI-native products from concept to production.
+
+### 🎯 Core Expertise
+
+- **Product**: PRDs/FRDs, roadmap execution, cross-functional leadership
+- **AI**: LLMs, agentic systems, multi-agent orchestration, RAG
+- **Data**: SQL, Python, product metrics, KPI analysis
+- **Enterprise**: GDPR, HIPAA, ISO 27001, SOC 2, compliance
+- **Tech Stack**: React, Next.js, TypeScript, Node.js, PostgreSQL, GCP
+
+---
+
+## 💼 Experience
+
+### **Product Engineer (AI Systems)** — Hapticware Intelligence
+*Apr 2026 – Present | Pune, India*
+
+- Owned end-to-end execution of **ExoQ** (AI Agent OS), delivering 30+ features
+- Authored **25+ PRDs/FRDs** for AI agents, enterprise workflows, and compliance
+- Defined product scope & workflows for **59 AI sub-agents** across 9 production releases in 3 weeks
+- Led QA, UAT, and compliance across GDPR, HIPAA, ISO 27001, SOC 2, DPDP
+
+### **Product Engineer** — DDN Storage (DataDirect Networks)
+*Apr 2025 – Mar 2026 | Pune, India*
+
+- Partnered with enterprise customers to drive issue resolution and product improvements
+- Performed **RCA on 20+ incidents**, reducing repeat escalations by **15%**
+- Automated log analysis using **Python**, improving debugging efficiency by **40%**
+- Created SOPs and technical documentation for enterprise workflows
+
+---
+
+## 🚀 Projects
+
+### **ExoQ.ai** — AI Agent OS
+Enterprise AI platform with LLMs, RAG, and multi-agent orchestration for workflow automation.
+
+**Tech**: LLM Applications · RAG · Multi-Agent Systems · Prompt Engineering
+
+### **Healthcare CRM** — HV Desai
+CRM platform delivering workflow automation by translating business requirements into user-centric features.
+
+**Tech**: Requirement Gathering · Stakeholder Management · Product Design
+
+---
+
+## 🛠️ Tech Stack
 
 ```
-src/
-├── app/              # Next.js App Router pages
-├── components/       # Reusable React components
-│   ├── Button.tsx   # Button component (primary, secondary, outline)
-│   ├── Card.tsx     # Card component with hover effect
-│   ├── Section.tsx  # Section wrapper for consistent spacing
-│   ├── Navbar.tsx   # Navigation bar with mobile menu
-│   ├── Footer.tsx   # Footer with links and social
-│   ├── Hero.tsx     # Hero section
-│   ├── About.tsx    # About section
-│   ├── Experience.tsx # Experience/work history section
-│   ├── Projects.tsx  # Portfolio projects showcase
-│   ├── Skills.tsx   # Skills section
-│   ├── Contact.tsx  # Contact form and methods
-│   └── LoadingScreen.tsx # Initial loading animation
-├── config/          # Configuration files
-│   └── theme.ts    # Theme colors and spacing constants
-├── lib/             # Utility functions and providers
-│   └── theme-provider.tsx # Theme context and hook
-└── styles/
-    └── globals.css  # Global styles and CSS variables
+Frontend:    React, Next.js, TypeScript, Tailwind CSS, Framer Motion
+Backend:     Node.js, Express, REST APIs
+Database:    PostgreSQL, MongoDB, Firebase
+Tools:       Git, GitHub, GCP, Jira, Notion, Figma, Confluence
+AI/ML:       Claude, LLMs, Agentic AI, RAG, Prompt Engineering
 ```
 
-## Getting Started
+---
 
-### Prerequisites
+## 📊 Stats
 
-- Node.js 18+ (Next.js 15 requirement)
-- npm or yarn package manager
+| Metric | Value |
+|--------|-------|
+| Years in Product | 5+ |
+| Features Shipped | 30+ |
+| PRDs/FRDs Written | 25+ |
+| AI Sub-Agents Scoped | 59 |
+| Production Releases | 9 (in 3 weeks) |
+| Enterprise Incidents Analyzed | 20+ |
 
-### Installation
+---
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd portfolio
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Create environment variables:
-```bash
-cp .env.example .env.local
-```
-
-4. Start development server:
-```bash
-npm run dev
-```
-
-Visit `http://localhost:3000` to see your portfolio.
-
-## Development
-
-### Available Scripts
-
-```bash
-npm run dev      # Start development server
-npm run build    # Build for production
-npm start        # Start production server
-npm run lint     # Run ESLint
-```
-
-### Key Technologies
+## 🎨 Built With
 
 - **Framework**: Next.js 15 (App Router)
-- **Language**: TypeScript 5
-- **Styling**: Tailwind CSS 3
-- **Animations**: Framer Motion 11
-- **Linting**: ESLint with Next.js preset
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Fonts**: Press Start 2P (pixel), Inter (body)
+- **Hosting**: Vercel (auto-deploy on push)
+- **Performance**: ~150KB first load, static prerender, 95+ Lighthouse
 
-## Customization
+---
 
-### Update Personal Information
+## 🚀 Quick Start
 
-Edit components to add your actual content:
-- `src/components/Hero.tsx` - Hero title and description
-- `src/components/About.tsx` - About section content
-- `src/components/Experience.tsx` - Work experience
-- `src/components/Projects.tsx` - Project details
-- `src/components/Skills.tsx` - Your skills
-- `src/components/Contact.tsx` - Contact links
-
-### Theme Customization
-
-Edit `src/config/theme.ts` to customize colors and spacing:
-
-```typescript
-export const lightTheme = {
-  colors: {
-    accent: '#2563eb', // Change primary accent color
-    // ... other colors
-  },
-};
-```
-
-CSS variables are applied in `src/lib/theme-provider.tsx`.
-
-### Add Images
-
-Replace placeholder images in components:
-- Hero section background
-- Project images
-- Profile picture
-
-## TODO Items
-
-Throughout the codebase, there are TODO comments indicating areas for enhancement:
-
-### High Priority
-- [ ] Integrate email service (SendGrid, Resend, etc.)
-- [ ] Add form validation and reCAPTCHA
-- [ ] Replace placeholder images with actual assets
-- [ ] Update personal information in all sections
-
-### Medium Priority
-- [ ] Add scroll-triggered animations
-- [ ] Implement image lazy loading
-- [ ] Add project filtering by technology
-- [ ] Create project detail modals
-
-### Low Priority (Polish)
-- [ ] Add typing animations
-- [ ] Add floating shape animations
-- [ ] Add parallax effects
-- [ ] Add page transition animations
-
-## Performance Optimization
-
-- Image optimization with Next.js Image component
-- Code splitting with dynamic imports
-- CSS-in-JS with Tailwind for minimal bundle
-- SEO metadata for better search rankings
-
-## Browser Support
-
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-- Mobile browsers
-
-## Deployment
-
-### Deploy to Vercel (Recommended)
-
-1. Push code to GitHub
-2. Connect repository to Vercel
-3. Set environment variables in Vercel dashboard
-4. Deploy
+### Local Development
 
 ```bash
-vercel
+# Clone and install
+git clone https://github.com/Gunjanmehta001/portfolio.git
+cd portfolio
+npm install
+
+# Start dev server
+npm run dev
+
+# Build for production
+npm run build
+npm start
 ```
 
-### Deploy to Other Platforms
+Visit `http://localhost:3000` and press `7` to toggle day/night!
 
-- **Netlify**: `netlify deploy`
-- **AWS Amplify**: AWS Amplify console
-- **Self-hosted**: `npm run build && npm start`
+### Deploy to Vercel
 
-## SEO Checklist
+```bash
+npm install -g vercel
+vercel --prod
+```
 
-- [ ] Update meta tags in `src/app/layout.tsx`
-- [ ] Add Open Graph images
-- [ ] Create sitemap
-- [ ] Add robots.txt
-- [ ] Submit to Google Search Console
-- [ ] Add structured data (JSON-LD)
-- [ ] Optimize Core Web Vitals
+Every git push auto-deploys to production.
 
-## Accessibility
+---
 
-- Semantic HTML structure
-- ARIA labels on interactive elements
-- Color contrast ratios meet WCAG AA standards
-- Keyboard navigation support
-- Focus states on all interactive elements
+## 📝 Customization
 
-## License
+### Update Resume Content
 
-MIT License - feel free to use this template for your portfolio.
+- **About**: `src/components/About.tsx`
+- **Experience**: `src/components/Experience.tsx`
+- **Projects**: `src/components/Projects.tsx`
+- **Skills**: `src/components/Skills.tsx`
 
-## Support
+### Modify Theme
 
-For issues or questions, please check the TODO comments throughout the codebase for guidance on common customizations.
+- **Colors**: `src/app/globals.css` (CSS variables)
+- **Fonts**: `src/app/layout.tsx` (Google Fonts)
+- **Animations**: `src/lib/motion.ts` (motion tokens)
+
+---
+
+## 📞 Connect
+
+- 🌐 **Portfolio**: [gunjanmehta.vercel.app](https://gunjanmehta.vercel.app)
+- 📧 **Email**: [gunjanmehta.contact@gmail.com](mailto:gunjanmehta.contact@gmail.com)
+- 💼 **LinkedIn**: [Gunjan Mehta](https://linkedin.com/in/gunjan-mehta)
+- 💻 **GitHub**: [Gunjanmehta001](https://github.com/Gunjanmehta001)
+
+---
+
+## 📄 License
+
+MIT © 2026 Gunjan Mehta
+
+---
+
+## 🎮 Have fun exploring the world! 🌍
+
+Press `1-6` to navigate, `7` for night mode, shake your mouse to grow the explorer.
+
+**Made with ❤️ and pixels**
